@@ -17,8 +17,8 @@ int main()
 {
 	setlocale(LC_ALL, "RU");
 	//task_1();
-	task_2();
-	//task_3();
+	//task_2();
+	task_3();
 	//task_4();
 	//task_5();
 		
@@ -86,7 +86,7 @@ void task_2()
 
 void task_3()
 {
-	int a, b, c;
+	int a, b, c, sum;
 	printf("Введите длину стороны а: ");
 	scanf_s("%d", &a);
 	printf("Введите длину стороны b: ");
@@ -94,8 +94,26 @@ void task_3()
 	printf("Введите длину стороны c: ");
 	scanf_s("%d", &c);
 
+	if (a > (b + c) && b > (a + c) && c > (a + b))
+		cout << " Треугольник не существует" << endl;
+
+	else
+		cout << " Треугольник  существует" << endl;
+
+	    if(a == b || b == c || a == c)
+		   cout << " Треугольник равнобедренный" << endl;
+	          if (a == b && b == c && c == a)
+		        cout << " Треугольник равносторонний" << endl;
+
+	
 
 
+	    
+	     
+
+	
+
+
+	
 }
-
 
